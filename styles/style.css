@@ -1,5 +1,44 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+:root {
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --subtitle-color: #000028;
+  --main-text-color: #F1B2CE;
+  --accent-color: #FF0070;
+
+  --title-font-size: 116px;
 }
+
+* {
+  font-size: 18px;
+  font-family: IBM Plex mono, sans-serif;
+}
+
+.page {
+  background-color: var(--bg-color, #000);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color)
+}
+
+.header-title {
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  text-shadow: 4px 4px var(--accent-color);
+  line-height: 85%;
+}
+
+.content-title {
+  color: var(--subtitle-color);
+  background-color: var(--accent-color);
+}
+
