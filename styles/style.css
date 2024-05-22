@@ -1,48 +1,39 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-:root {
-  --header-bg-image: url(/images/cover-image-dark.png);
-  --bg-color: #000028;
-  --title-color: #DB00FF;
-  --subtitle-color: #000028;
-  --main-text-color: #F1B2CE;
-  --accent-color: #FF0070;
-
-  --title-font-size: 116px;
-}
-
 * {
   font-size: 18px;
-  font-family: IBM Plex mono, sans-serif;
+  font-family: 'IBM Plex mono', sans-serif;
+  color: var(--subtitle-color);
 }
 
 .page {
-  padding: 10px 10px 0;
+  margin-inline: auto;
+  padding: 10px;
   background-color: var(--bg-color, #000);
-  background-image: var(--header-bg-image);
+  /* background-image: var(--header-bg-image);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .header {
   position: relative;
   display: grid;
-
+  block-size: calc(100vb - 20px);
 }
 
-.header::before {
+.decorated-zone::before {
   content: '';
   justify-self: right;
+  align-self: self-start;
   block-size: 25px;
   inline-size: 25px;
   border-inline-end: solid 1px var(--accent-color);
   border-block-start: solid 1px var(--accent-color);
 }
 
-.header::after {
+.decorated-zone::after {
   content: '';
   justify-self: left;
+  align-self: self-end;
   block-size: 25px;
   inline-size: 25px;
   border-inline-start: solid 1px var(--accent-color);
@@ -50,7 +41,11 @@
 }
 
 .rec {
+  display: inline-block;
   justify-self: right;
+  position: absolute;
+  top: 0;
+  right: 10px;
   color: var(--accent-color);
   text-transform: uppercase;
 }
@@ -58,12 +53,12 @@
 .rec::after {
   content: '';
   display: inline-block;
-  inline-size: 11px;
-  block-size: 11px;
+  inline-size: 9px;
+  block-size: 9px;
   margin-inline-start: 10px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: #FF0070 0 0 10px 2px;
+  box-shadow: #FF0070 0 0 5px 2px;
 }
 
 .header__theme-menu {
@@ -79,7 +74,8 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color)
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 .header-title {
@@ -89,7 +85,7 @@
   line-height: 85%;
 }
 
-.title-decor {
+.bg-text-decor {
   background-color: var(--accent-color);
 }
 
@@ -97,8 +93,14 @@
   color: var(--accent-color);
 }
 
-.list-title {
+.list-title-bold {
+  font-weight: 700;
+  color: var(--subtitle-color);
+}
 
+.list-title-normal {
+  font-weight: 400;
+  color: var(--subtitle-color);
 }
 
 .content-text {
@@ -107,4 +109,31 @@
 
 ul {
   padding: 0;
+}
+
+.gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery-image {
+
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  padding-block-start: 20px;
+  display: grid;
+  block-size: 100vb;
+}
+
+.footer-title {
+  margin: auto;
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  text-shadow: 4px 4px var(--accent-color);
+  line-height: 85%;
 }
