@@ -2,6 +2,7 @@
   font-size: 18px;
   font-family: 'IBM Plex mono', sans-serif;
   color: var(--subtitle-color);
+  /* border: solid red 1px; */
 }
 
 a {
@@ -14,13 +15,23 @@ a {
 }
 
 .page {
+  position: relative;
   margin-inline: auto;
   padding: 10px;
   background-color: var(--bg-color, #000);
-  /* background-image: var(--header-bg-image);
+  background-image: var(--header-bg-image);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-color); 
+  opacity: .5;
+  z-index: -1;
 }
 
 .header {
@@ -72,9 +83,6 @@ a {
 
 .header__theme-menu {
   justify-self: right;
-  /* block-size: 138px; */
-  /* line-height: 1.8em; */
-  /* block-size: fit-content; */
 }
 
 .header__theme-menu-list {
@@ -112,6 +120,7 @@ a {
 
 .header-paragraph {
   align-self: self-end;
+  justify-self: self-end;
   margin-block-start: 0.9em;
 }
 
@@ -185,16 +194,67 @@ a {
     padding: 20px;
   }
 
+  .header-paragraph {
+    inline-size: 364px;
+  }
+
+  .header__theme-menu-list {
+    margin-block-start: 35%;
+  }
+
+  .header-title {
+    align-self: center;
+    margin-inline-start: -0.17em;
+    margin-block-end: 0.08em;
+    letter-spacing: 1em;
+    letter-spacing: .02em;
+  }
+
+  .header-paragraph {
+    align-self: center;
+    justify-self: self-end;
+    margin-block-start: 4em;
+  }
+
+  .content__text-block:nth-of-type(2n-1) {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    margin-block-start: 3.35em;
+  }
+
+  .content__text-block:nth-of-type(1) .content-title {
+    color: blue;
+    grid-row-end: span 4;
+    margin-block-start: 0;
+  }
+
+  .content__text-block:nth-of-type(2) .content-text {
+    margin-block-start: 0.6em;
+  }
+
+  .content__text-block:nth-of-type(2) .content-title {
+    margin-block-start: 1.6em;
+    margin-block-end: 1.1em;
+    inline-size: 150px;  
+  }
+
+  .content__text-block:nth-of-type(3) .content-title {
+    color: green;
+    grid-row-end: span 11;
+    margin-block-start: 0;
+  }
+
   .gallery {
     border: solid red;
     gap: 20px;
     height: 780px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-}
-  .gallery-image-1 {
-    grid-column-end: span 2;
-}
+  }
+    .gallery-image-1 {
+      grid-column-end: span 2;
+  }
   .gallery-image-2 {
     grid-row-end: span 2;
   }
@@ -210,5 +270,5 @@ a {
 }
 
 @media (min-width: 1024px) {
- 
+
 }
