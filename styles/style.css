@@ -2,7 +2,7 @@
   font-size: 18px;
   font-family: 'IBM Plex mono', sans-serif;
   color: var(--subtitle-color);
-  /* border: solid red 1px; */
+  /* outline: solid red 1px; */
 }
 
 a {
@@ -224,13 +224,16 @@ a {
   }
 
   .content__text-block:nth-of-type(1) .content-title {
-    color: blue;
     grid-row-end: span 4;
     margin-block-start: 0;
   }
 
   .content__text-block:nth-of-type(2) .content-text {
     margin-block-start: 0.6em;
+  }
+
+  .content__text-block:nth-of-type(3) .content-text:last-of-type {
+    margin-block-end: 5em;
   }
 
   .content__text-block:nth-of-type(2) .content-title {
@@ -240,12 +243,16 @@ a {
   }
 
   .content__text-block:nth-of-type(3) .content-title {
-    color: green;
     grid-row-end: span 11;
     margin-block-start: 0;
   }
 
+  .content__text-block:nth-of-type(3) {
+    margin-block-start: 4.5em;
+  }
+
   .gallery {
+    margin-block-start: 3em;
     border: solid red;
     gap: 20px;
     height: 780px;
