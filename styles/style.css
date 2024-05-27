@@ -25,11 +25,11 @@ a {
 }
 
 .page::before {
-  background-attachment: fixed;
+  position: fixed;
+  inline-size: 100vi;
   content: '';
-  position: absolute;
   inset: 0;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color); 
   opacity: .5;
   z-index: -1;
 }
@@ -37,7 +37,7 @@ a {
 .header {
   position: relative;
   display: grid;
-  block-size: calc(100vb - 20px);
+  block-size: пш giy;
 }
 
 .decorated-zone::before {
@@ -135,7 +135,7 @@ a {
 }
 
 .content-paragraph {
-  margin-block-end: 1.3em;
+  margin-block-end: 1em;
 }
 
 .content-text {
@@ -183,8 +183,8 @@ a {
 }
 
 .footer-title {
+  font-size: 116px;
   margin: auto;
-  font-size: var(--title-font-size);
   color: var(--title-color);
   text-shadow: 2px 2px var(--accent-color);
   line-height: 85%;
@@ -239,7 +239,7 @@ a {
   }
 
   .content__text-block:nth-of-type(3) .content-text:last-of-type {
-    margin-block-end: 4.4em;
+    margin-block-end: 4.6em;
   }
 
   .content__text-block:nth-of-type(2) .content-title {
@@ -318,6 +318,14 @@ a {
     inline-size: 490px;
     margin-block-start: 2em;
   }
+
+  .content-text {
+    margin-block-end: 1.2em;
+}
+
+.content__text-block:nth-of-type(3) .content-text:last-of-type {
+  margin-block-end: 4.3em;
+}
 
   .content__text-block:nth-of-type(2n-1) {
     column-gap: 10px;
