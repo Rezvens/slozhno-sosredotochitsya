@@ -15,7 +15,6 @@ a {
 }
 
 .page {
-  position: relative;
   margin-inline: auto;
   padding: 10px;
   background-color: var(--bg-color, #000);
@@ -26,10 +25,11 @@ a {
 }
 
 .page::before {
+  background-attachment: fixed;
   content: '';
   position: absolute;
   inset: 0;
-  background-color: var(--bg-color); 
+  background-color: var(--bg-color);
   opacity: .5;
   z-index: -1;
 }
@@ -112,7 +112,7 @@ a {
 
 .header-title {
   align-self: flex-end;
-  font-size: var(--title-font-size);
+  font-size: 116px;
   color: var(--title-color);
   text-shadow: 4px 4px var(--accent-color);
   line-height: 0.85em;
@@ -139,7 +139,7 @@ a {
 }
 
 .content-text {
-  margin-block-start: 0.56em;
+  margin-block-start: 0.54em;
   line-height: 1.3em;
   margin-block-end: 1.1em;
 }
@@ -165,6 +165,7 @@ a {
 .gallery {
   margin-block-start: 0.6em;
   display: grid;
+  grid-auto-rows: max-content;
   gap: 10px;
 }
 
@@ -257,11 +258,13 @@ a {
   }
 
   .gallery {
+    /* border: red solid 1px; */
     margin-block-start: 1.1em ;
     gap: 20px;
-    block-size: 780px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    /* max-block-size: 70vb; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    
   }
     .gallery-image-1 {
       grid-column-end: span 2;

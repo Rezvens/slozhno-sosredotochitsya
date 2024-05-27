@@ -5,9 +5,25 @@
 */
 
 .page.theme_light {
+  --header-bg-image: url(/images/cover-image-light.png);
   --bg-color: #FFF1F7; 
   --title-color: #FFC2E6;
   --subtitle-color: #353430;
   --main-text-color: #353430;
   --accent-color: #FF8DCB;
+}
+
+.page.theme_light .rec {
+    visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-bg-image: url(/images/cover-image-light.png);
+    --bg-color: #FFF1F7; 
+    --title-color: #FFC2E6;
+    --subtitle-color: #353430;
+    --main-text-color: #353430;
+    --accent-color: #FF8DCB;    
+    }
 }
