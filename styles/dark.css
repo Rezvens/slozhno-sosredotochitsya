@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  --header-bg-image: url(/images/cover-image-dark.png);
   --bg-color: #000028;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
