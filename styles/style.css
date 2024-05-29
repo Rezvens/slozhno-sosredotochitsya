@@ -13,6 +13,10 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus {
+  outline: none;
+}
+
 a:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
