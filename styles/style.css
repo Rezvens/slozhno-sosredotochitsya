@@ -157,6 +157,7 @@ a:focus-visible {
   margin-block-start: 0.54em;
   line-height: 1.3em;
   margin-block-end: 1.12em;
+  color: var(--main-text-color);
 }
 
 .content-text:last-of-type {
@@ -171,10 +172,6 @@ a:focus-visible {
 .list-title-normal {
   font-weight: 400;
   color: var(--content-subtitle-color: );
-}
-
-.content-text {
-  color: var(--main-text-color);
 }
 
 .gallery {
@@ -215,10 +212,6 @@ a:focus-visible {
     padding-block-end: 40px;
   }
 
-  .header-paragraph {
-    inline-size: 364px;
-  }
-
   .header__theme-menu-list {
     margin-block-start: 72%;
   }
@@ -227,11 +220,11 @@ a:focus-visible {
     margin-block-start: 6%;
     align-self: center;
     margin-inline-start: -0.17em;
-    letter-spacing: 1em;
     letter-spacing: 0.02em;
   }
 
   .header-paragraph {
+    inline-size: 364px;
     align-self: center;
     justify-self: self-end;
     margin-block-start: 3.5em;
@@ -289,9 +282,6 @@ a:focus-visible {
 
   .gallery-image-3 {
     grid-row-end: span 2;
-  }
-
-  .gallery-image-4 {
   }
 
   .gallery-image-5 {
