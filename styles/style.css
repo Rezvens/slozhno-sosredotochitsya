@@ -179,6 +179,7 @@ a:focus-visible {
   display: grid;
   grid-auto-rows: max-content;
   gap: 10px;
+  margin-block-end: 8%;
 }
 
 .gallery-img {
@@ -269,6 +270,7 @@ a:focus-visible {
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
+    margin-block-end: 5.5%;
   }
 
   .gallery-image-1 {
@@ -288,8 +290,7 @@ a:focus-visible {
   }
 
   .footer {
-    margin-block-start: 3.3em;
-    block-size: calc(100vb - 20px);
+    padding-block-start: 40px;
   }
 
   .footer-title {
@@ -357,7 +358,7 @@ a:focus-visible {
   }
 
   .gallery {
-    min-block-size: 1048px;
+    margin-block-end: 6.5%;
   }
 
   .footer-title {
