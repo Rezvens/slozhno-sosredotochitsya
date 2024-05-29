@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-size: 18px;
+  font-family: "IBM Plex mono", monospace;
 }
 
 body {
