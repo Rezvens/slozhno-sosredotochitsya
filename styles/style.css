@@ -188,7 +188,6 @@ a:focus-visible {
 }
 
 .footer {
-  margin-block-start: 1.6em;
   padding-block-start: 20px;
   display: grid;
   block-size: 100vb;
