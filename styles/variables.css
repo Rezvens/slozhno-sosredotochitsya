@@ -1,8 +1,10 @@
 :root {
   --header-bg-image: url(/images/cover-image-dark.png);
+  --title-shadow: #FF0070;
   --bg-color: #000028;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
   --main-text-color: #F1B2CE;
   --accent-color: #FF0070;
+  --button-color: var(--accent-color);
 }

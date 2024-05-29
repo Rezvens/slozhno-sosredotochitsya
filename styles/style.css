@@ -47,8 +47,8 @@ a {
   align-self: self-start;
   block-size: 25px;
   inline-size: 25px;
-  border-inline-end: solid 1px var(--accent-color);
-  border-block-start: solid 1px var(--accent-color);
+  border-inline-end: solid 1px var(--button-color);
+  border-block-start: solid 1px var(--button-color);
 }
 
 .decorated-zone::after {
@@ -57,8 +57,8 @@ a {
   align-self: self-end;
   block-size: 25px;
   inline-size: 25px;
-  border-inline-start: solid 1px var(--accent-color);
-  border-block-end: solid 1px var(--accent-color);
+  border-inline-start: solid 1px var(--button-color);
+  border-block-end: solid 1px var(--button-color);
 }
 
 .rec {
@@ -102,12 +102,12 @@ a {
   inline-size: 70px;
   background-color: transparent;
   text-transform: lowercase;
-  color: var(--accent-color);
+  color: var(--button-color);
   border: none;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-color);
   pointer-events: none;
 }
 
@@ -115,7 +115,7 @@ a {
   align-self: flex-end;
   font-size: 116px;
   color: var(--title-color);
-  text-shadow: 4px 4px var(--accent-color);
+  text-shadow: 4px 4px var(--title-shadow);
   line-height: 0.83em;
 }
 
@@ -130,7 +130,7 @@ a {
 }
 
 .content-title {
-  color: var(--accent-color);
+  color: var(--button-color);
   margin-block-start: 8%;
   margin-block-end: 6%;
 }
@@ -151,12 +151,12 @@ a {
 
 .list-title-bold {
   font-weight: 700;
-  color: var(--subtitle-color);
+  color: var(--button-color);
 }
 
 .list-title-normal {
   font-weight: 400;
-  color: var(--subtitle-color);
+  color: var(--button-color);
 }
 
 .content-text {
@@ -187,7 +187,7 @@ a {
   font-size: 116px;
   margin: auto;
   color: var(--title-color);
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px var(--title-shadow);
   line-height: 85%;
 }
 
