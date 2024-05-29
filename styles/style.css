@@ -149,7 +149,7 @@ a:focus-visible {
 
 .list-title-bold {
   font-weight: 700;
-  color: var(--content-subtitle-color: );
+  color: var(--content-subtitle-color);
 }
 
 .content-title {
@@ -231,7 +231,7 @@ a:focus-visible {
     inline-size: 364px;
     align-self: center;
     justify-self: self-end;
-    margin-block-start: 3.5em;
+    margin-block-start: 4em;
   }
 
   .content__text-block:nth-of-type(2n-1) {
@@ -323,13 +323,13 @@ a:focus-visible {
   .header-title {
     font-size: 157px;
     margin-inline-start: -0.14em;
-    margin-block-start: 2%;
+    margin-block-start: 3%;
     letter-spacing: 0;
   }
 
   .header-paragraph {
     inline-size: 490px;
-    margin-block-start: 2em;
+    margin-block-start: 3em;
   }
 
   .content-text {
@@ -362,7 +362,7 @@ a:focus-visible {
   }
 
   .gallery {
-    margin-block-end: 6.5%;
+    margin-block-end: 4.5%;
   }
 
   .footer-title {
