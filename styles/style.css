@@ -143,6 +143,11 @@ a:focus-visible {
   background-color: var(--text-background-color);
 }
 
+.list-title-bold {
+  font-weight: 700;
+  color: var(--content-subtitle-color: );
+}
+
 .content-title {
   color: var(--content-title-color);
   margin-block-start: 8%;
@@ -162,11 +167,6 @@ a:focus-visible {
 
 .content-text:last-of-type {
   margin-block-end: 2.85em;
-}
-
-.list-title-bold {
-  font-weight: 700;
-  color: var(--content-subtitle-color: );
 }
 
 .list-title-normal {
