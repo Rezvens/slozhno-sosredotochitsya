@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  border-block-end: solid 2px var(--main-text-color);
 }
 
 a:focus {
@@ -110,7 +110,7 @@ a:focus-visible {
 .header__theme-menu-button:hover {
   cursor: pointer;
   outline: solid 1px
-    color-mix(in srgb, var(--content-title-color) 60%, transparent);
+  color-mix(in srgb, var(--content-title-color) 60%, transparent);
 }
 
 .header__theme-menu-button:focus-visible {
@@ -170,8 +170,8 @@ a:focus-visible {
   color: var(--main-text-color);
 }
 
-.content-text:last-of-type {
-
+.content-text:not(:last-of-type) {
+  margin-block-end: 1.5%;
 }
 
 .list-title-normal {
@@ -390,12 +390,23 @@ a:focus-visible {
     margin-block-start: 3em;
   }
 
-  .content-text {
-    margin-block-end: 1.2em;
+
+
+
+
+
+  .content__text-block {
+    margin-block-start: 4.1%;
+    margin-block-end: 0;
   }
 
-  .content__text-block:nth-of-type(3) .content-text:last-of-type {
-    margin-block-end: 4.3em;
+  .content-subtitle {
+    margin-block-start: 3.1%;
+    margin-block-end: 1.5%;
+  }
+
+  .content__text-block:nth-of-type(1) > article:first-of-type > .content-subtitle:first-of-type {
+    margin-block-end: 1.5%;
   }
 
   .content__text-block:nth-of-type(2n-1) {
@@ -404,23 +415,41 @@ a:focus-visible {
 
   .content__text-block:nth-of-type(2) {
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     column-gap: 20px;
+    row-gap: 20px; 
+    margin-block-start: 8.1%;
   }
 
   .content__text-block:nth-of-type(2) .content-title {
     grid-column-end: span 3;
-    inline-size: 260px;
+    inline-size: 270px;
+    margin-block-end: 0;
+  }
+
+  .content__text-block:nth-of-type(2) .content-subtitle {
+    margin-block-start: 0;
+    margin-block-end: 3%;
   }
 
   .content__text-block:nth-of-type(3) {
-    margin-block-start: 1.5em;
+    margin-block-start: 6.3%;
+    margin-block-end: 8.1%;
   }
 
+  .content__text-block:nth-of-type(3) > .content-subtitle {
+    margin-block: 0;
+  }
+
+
+
+
+
+
+
   .gallery {
-    margin-block-end: 4.5%;
+    margin-block-end: 4.1%;
   }
 
   .footer-title {
