@@ -1,18 +1,11 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  --header-bg-image: url(/images/cover-image-light.png);
-  --title-shadow: #FF0070;
-  --button-color: #353430;
-  --bg-color: #FFF1F7; 
+  --page-background-image: url(/images/cover-image-light.png);
+  --page-background-color:#FFF1F7;
   --title-color: #FFC2E6;
-  --subtitle-color: #353430;
+  --content-title-color: #353430;
+  --text-background-color: #FF8DCB;
   --main-text-color: #353430;
-  --accent-color: #FF8DCB;    
+  --content-subtitle-color: #353430;
 }
 
 .page.theme_light .rec {
@@ -21,17 +14,16 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --header-bg-image: url(/images/cover-image-light.png);
-    --title-shadow: #FF0070;
-    --button-color: #353430;
-    --bg-color: #FFF1F7; 
+    --page-background-image: url(/images/cover-image-light.png);
+    --page-background-color:#FFF1F7;
     --title-color: #FFC2E6;
-    --subtitle-color: #353430;
+    --content-title-color: #353430;
+    --text-background-color: #FF8DCB;
     --main-text-color: #353430;
-    --accent-color: #FF8DCB;    
-    }
-    
-    .rec {
-      visibility: hidden;
+    --content-subtitle-color: #353430;
   }
+    
+  .rec {
+      visibility: hidden;
+  } 
 }
